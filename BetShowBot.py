@@ -59,7 +59,7 @@ def load_history():
         return []
 
 def append_to_history(content):
-    with open('history.txt', 'a') as file:
+    with open('history.txt', 'w') as file:
         file.write(content + '\n')
 
 def caller():
